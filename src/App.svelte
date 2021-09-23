@@ -1,47 +1,10 @@
 <script lang="ts">
-  import { onDestroy } from "svelte";
-  import { getMetricValue } from "@gapit/grafana-metric";
-  import { metricValues } from "./stores";
-
-  function getValues() {
-    return customProperties.values.map((valueDict) => {
-      const { name, metricName, decimals, baseUnit } = valueDict;
-      const value = getMetricValue(metricName);
-
-      return {
-        name,
-        value:
-          value === null
-            ? "No data"
-            : `${Number(value).toFixed(decimals)} ${baseUnit}`,
-      };
-    });
-  }
-
-  function onPanelUpdate() {
-    metricValues.update(() => getValues());
-  }
-
-  htmlNode.addEventListener("panelupdate", onPanelUpdate);
-  onDestroy(() => {
-    htmlNode.removeEventListener("panelupdate", onPanelUpdate);
-  });
+  import Video from "./Components/Video.svelte";
 </script>
 
-<main>
-  {#each Object.values($metricValues) as { name, value }}
-    <h1>{name}: {value}</h1>
-  {/each}
-</main>
+<Video />
 
+<!-- <Videojs /> -->
 <style type="text/scss">
   $color: #ff3e00;
-  main {
-    text-align: center;
-  }
-
-  h1 {
-    color: $color;
-    font-weight: 400;
-  }
 </style>

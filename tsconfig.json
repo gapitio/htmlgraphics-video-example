@@ -5,6 +5,10 @@
   "exclude": ["node_modules/*", "public/*", "dist/*"],
   "compilerOptions": {
     "resolveJsonModule": true,
-    "strict": true
+    "strict": true,
+    "baseUrl": "./",
+    "paths": {
+      "~/*": ["./src/*"]
+    }
   }
 }

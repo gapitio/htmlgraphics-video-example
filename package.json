@@ -1,5 +1,5 @@
 {
-  "name": "htmlgraphics-svelte-bundler-template",
+  "name": "htmlgraphics-video-example",
   "version": "0.0.0",
   "license": "MIT",
   "type": "module",
@@ -25,7 +25,7 @@
   "devDependencies": {
     "@gapit/format-si": "0.0.1",
     "@gapit/grafana-metric": "1.0.0",
-    "@grafana/data": "~7.1.5",
+    "@grafana/data": "^8.1.5",
     "@rollup/plugin-commonjs": "^18.0.0",
     "@rollup/plugin-json": "^4.1.0",
     "@rollup/plugin-node-resolve": "^11.2.1",
