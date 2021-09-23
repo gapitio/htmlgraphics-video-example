@@ -1,0 +1,4 @@
+{
+  "eslint.probe": ["javascript", "typescript", "html", "markdown", "svelte"],
+  "eslint.validate": ["svelte"]
+}
