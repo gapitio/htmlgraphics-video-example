@@ -1,10 +1,10 @@
-# Bundler
+# Video example
 
-Bundler to make developing code easier and scalable.
+An example of how to play videos in Grafana.
 
 ## Table of contents
 
-- [Bundler](#bundler)
+- [Video example](#video-example)
   - [Table of contents](#table-of-contents)
   - [Contains](#contains)
   - [Usage](#usage)
@@ -18,7 +18,6 @@ Bundler to make developing code easier and scalable.
 - [Prettier](https://prettier.io/)
 - [TypeScript](https://www.typescriptlang.org/)
 - [ESLint](https://eslint.org/)
-- [SVGO](https://github.com/svg/svgo)
 - Local development server to run the code live in the browser.
 
 ## Usage
